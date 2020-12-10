@@ -48,5 +48,10 @@
       }
     ],
     "no-use-before-define": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
   }
 }
