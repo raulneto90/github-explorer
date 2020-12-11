@@ -1,6 +1,6 @@
 # Github Explorer - ReactJS
 
-<img src="https://github.com/raulneto90/primeiro-projeto-reactjs/blob/master/images/system-gif.gif" alt="GIF sistema"/>
+<img src="https://github.com/raulneto90/github-explorer/blob/master/images/repositories.gif" alt="GIF sistema"/>
 
 ## :information_source: Sobre o projeto
 
@@ -37,6 +37,6 @@ $ yarn
 $ yarn start
 ```
 
-Você pode conferir também a demo do projeto:
+Você pode conferir também a demo do projeto: https://raulneto90-github-explorer.netlify.app
 
 Feito com ❤ por Raul Neto. Me siga no [Linkedin](https://www.linkedin.com/in/raul-neto-777bb988/)
