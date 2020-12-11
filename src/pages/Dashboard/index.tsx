@@ -1,6 +1,7 @@
 import React, { useState, FormEvent, useEffect } from 'react';
 import { FiChevronRight, FiX } from 'react-icons/fi';
 
+import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
 import logo from '../../assets/logo.svg';
@@ -89,7 +90,10 @@ const Dashboard: React.FC = () => {
       <Repositories>
         {repositories.map(repository => (
           <div>
-            <a href="teste" key={repository.full_name}>
+            <Link
+              to={`/repository/${repository.full_name}`}
+              key={repository.full_name}
+            >
               <img
                 src={repository.owner.avatar_url}
                 alt={repository.owner.login}
@@ -99,7 +103,7 @@ const Dashboard: React.FC = () => {
                 <p>{repository.description}</p>
               </div>
               <FiChevronRight />
-            </a>
+            </Link>
             <FiX onClick={() => handleRemoveRepository(repository.full_name)} />
           </div>
         ))}
