@@ -37,6 +37,13 @@ export const RepositoryInfo = styled.section`
       border-radius: 50%;
     }
 
+    @media (max-width: 425px) {
+      img {
+        width: 90px;
+        height: 90px;
+      }
+    }
+
     div {
       margin-left: 24px;
 
@@ -49,6 +56,16 @@ export const RepositoryInfo = styled.section`
         font-size: 18px;
         color: #737380;
         margin-top: 4px;
+      }
+
+      @media (max-width: 425px) {
+        strong {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -74,6 +91,16 @@ export const RepositoryInfo = styled.section`
         margin-top: 4px;
         color: #6c6c80;
       }
+
+      @media (max-width: 425px) {
+        & + li {
+          margin-left: 40px;
+        }
+
+        strong {
+          font-size: 30px;
+        }
+      }
     }
   }
 `;
@@ -81,26 +108,18 @@ export const RepositoryInfo = styled.section`
 export const Issues = styled.div`
   margin-top: 80px;
 
-  display: flex;
-  align-items: center;
-
-  & + div {
-    margin-top: 16px;
-  }
-
-  svg {
-    margin-left: 15px;
-    cursor: pointer;
-    font-size: 20px;
-    color: #c53030;
-  }
-
   a {
+    display: flex;
+    align-items: center;
     background: #fff;
     border-radius: 5px;
     width: 100%;
     padding: 24px;
     text-decoration: none;
+
+    & + a {
+      margin-top: 16px;
+    }
 
     display: flex;
     align-items: center;
@@ -136,11 +155,6 @@ export const Issues = styled.div`
 
   @media (max-width: 425px) {
     & {
-      img {
-        width: 48px;
-        height: 48px;
-      }
-
       div {
         strong {
           font-size: 17px;
