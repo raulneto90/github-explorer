@@ -111,7 +111,22 @@ export const Repositories = styled.div`
   margin-top: 80px;
   max-width: 700px;
 
-  a {
+  & > div {
+    display: flex;
+    align-items:center;
+
+    & + div {
+      margin-top: 16px;
+    }
+
+    svg {
+      margin-left: 15px;
+      cursor: pointer;
+      font-size: 20px;
+      color: #c53030;
+    }
+
+    a {
     background: #fff;
     border-radius: 5px;
     width: 100%;
@@ -124,12 +139,10 @@ export const Repositories = styled.div`
     transition: transform 0.2s;
 
     &:hover {
-      transform: translateX(10px);
+      transform: translateX(5px);
     }
 
-    & + a {
-      margin-top: 16px;
-    }
+
 
     img {
       width: 64px;
@@ -158,6 +171,9 @@ export const Repositories = styled.div`
       color: #cbc8d6;
       font-size: 20px;
     }
+  }
+
+
 
     @media (max-width: 425px) {
       & {
